@@ -1,0 +1,50 @@
+body{
+    text-align: center;
+    background-color : #ecf0f1;
+    color : white;
+  }
+  
+.btn{
+  cursor : pointer;
+}
+
+h1{
+  /*color : #344952;*/
+}
+
+#textBox{
+  margin : 5px;
+}
+
+.clicked{
+  color : black;
+}
+
+.form, .greetings{
+  display : none;
+}
+
+.showing{
+  display: block;
+}
+
+
+
+/*cf) 더 예쁘게 만들기위한 요소*/
+@keyFrames fadeIn {
+  from {
+    opacitiy : 0; /* opacity : 불투명함*/
+  }to {
+    opacity : 1;
+  }
+}
+
+.bgImage{
+  position: fixed;
+  top : 0;
+  left : 0;
+  width : 100%;
+  height : 100%;
+  z-index : -1;  /* z축상의 위치, 클수록 앞에 작을수록 뒤에! */
+  animation: fadeIn .5s linear; /* cf)참고. 더 예쁘게 만들기위한 요소...*/
+}
